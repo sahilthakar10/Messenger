@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abc.example.com.timing.Chating.Displaydate">
+
+
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:layout_below="@+id/e1"
+        android:text="Enter"/>
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/e1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/l1"/>
+</RelativeLayout>

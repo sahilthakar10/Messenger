@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="#9000ff">
+    <!--
+        CardView
+            A FrameLayout with a rounded corner background and shadow.
+            CardView uses elevation property on L for shadows and falls back to a custom shadow
+            implementation on older platforms.
+    -->
+    <!--
+        android.support.v7.cardview:cardCornerRadius
+            Corner radius for CardView.
+            Must be a dimension value, which is a floating point number appended with a unit such
+            as "14.5sp". Available units are: px (pixels), dp (density-independent pixels), sp
+            (scaled pixels based on preferred font size), in (inches), mm (millimeters).
+
+            This may also be a reference to a resource (in the form "@[package:]type:name") or
+            theme attribute (in the form "?[package:][type:]name") containing a value of this type.
+
+            This is a private symbol.
+
+        Related Methods
+            setRadius(float)
+    -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardElevation="4dp"
+        card_view:cardMaxElevation="6dp"
+        card_view:cardBackgroundColor="#ffff"
+        >
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/l1"
+
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider_list"
+            android:dividerHeight="0.5dp"
+            android:layout_below="@+id/b1">
+
+        </com.baoyz.swipemenulistview.SwipeMenuListView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
